@@ -29,23 +29,25 @@ Alright, listen up! 💪 You want to **dominate** that Junior Data Engineer role
 
 ***
 
-## ☁️ **Days 8-11: Cloud Data Services (AWS + Azure)**
+## ☁️ **Days 8-11: Azure Cloud Data Services**
 
-**Focus: 80% on AWS Glue, Azure Data Factory, Databricks**
+**Focus: 80% on Azure Data Factory, Databricks, ADLS Gen2**
 
-**Days 8-9: AWS Focus**
+**Days 8-9: Azure Data Factory**
 
-- AWS Glue architecture, crawlers, Data Catalog, Glue jobs (PySpark-based)
-- S3 bucket structures, data lake patterns (raw/processed/curated zones)
-- AWS Glue triggers and scheduling
+- Azure Data Factory architecture - pipelines, activities, linked services, datasets
+- Integration Runtimes (Azure IR, Self-hosted IR)
+- Data flows, copy activities, and transformations
+- ADF triggers, scheduling, and monitoring
 
-**Days 10-11: Azure + Databricks**
+**Days 10-11: Azure Databricks + ADLS Gen2**
 
-- Azure Data Factory - pipelines, activities, linked services, datasets
 - ADLS Gen2 storage patterns, mounting in Databricks
+- Data lake architecture (raw/processed/curated zones)
 - Databricks notebooks, cluster management, Delta Lake basics
+- Unity Catalog for data governance
 
-**Mini Project**: Create a pipeline in AWS Glue OR Azure Data Factory that reads data from cloud storage, transforms using PySpark, and loads to a data warehouse/Delta table
+**Mini Project**: Create an Azure Data Factory pipeline that reads data from ADLS Gen2, transforms using PySpark in Databricks, and loads to a Delta table in Azure Synapse or Databricks
 
 ***
 
@@ -55,9 +57,9 @@ Alright, listen up! 💪 You want to **dominate** that Junior Data Engineer role
 
 - **Day 12**: Airflow fundamentals - DAGs, operators (PythonOperator, BashOperator), task dependencies, XComs
 - **Day 13**: Scheduling (cron expressions), sensors, branching, error handling, retries
-- **Day 14**: ADF integration with Airflow, AWS Step Functions basics (comparison), best practices
+- **Day 14**: ADF integration with Airflow, Azure Data Factory pipelines orchestration, best practices
 
-**Mini Project**: Create 2-3 Airflow DAGs that orchestrate your previous mini-projects (trigger Glue jobs, monitor completion, send notifications)
+**Mini Project**: Create 2-3 Airflow DAGs that orchestrate your previous mini-projects (trigger ADF pipelines, monitor completion, send notifications)
 
 ***
 
@@ -82,9 +84,9 @@ Alright, listen up! 💪 You want to **dominate** that Junior Data Engineer role
 **Final Project**: Build an **end-to-end data pipeline** combining everything:
 
 1. Data ingestion from multiple sources (CSV, JSON, API)
-2. PySpark transformations with data quality checks
-3. Load to cloud storage (S3/ADLS)
-4. Orchestrated by Airflow
+2. PySpark transformations with data quality checks in Databricks
+3. Load to cloud storage (ADLS Gen2) and Delta tables
+4. Orchestrated by Airflow or Azure Data Factory
 5. All code in Git with CI/CD
 6. GenAI-generated documentation and test data
 
